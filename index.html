@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="style.css">
     <title>Hrishabh's Blog</title>
+    <script src="https://kit.fontawesome.com/4ec03ac711.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,29 +18,30 @@
     <header>
         <h1>Hrishabh's blog</h1>
         <p>Sharing my thoughts, interests, and passions</p>
+   
     </header>
-
-
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="#blog">Blog</a>
-        <a href="#about">About Me</a>
-        <a href="#contact">Contact</a>
-        <a href="#htmlvideo">Video</a>
+<br>
+     <!-- Navigation Bar -->
+     <nav>
+        
+        
+        <img id="svg" src="../Static-html-website/Media/svg/blog-solid.svg" alt="blog"><a href="#blog">  Blog</a>
+        <img id="svg" src="../Static-html-website/Media/svg/address-card-solid.svg" alt="about me"><a href="#about">  About Me</a>
+        <img id="svg" src="../Static-html-website/Media/svg/phone-solid.svg" alt="contact me"><a href="#contact">  Contact</a>
+        <img id="svg" src="../Static-html-website/Media/svg/video-solid.svg" alt="video"><a href="#htmlvideo">  Video</a>
     </nav>
 
-    <br>
-    <br>
-    <br>
-
+           <br>
+    
+<div class="container">
     <!-- Blog Post Section -->
-    <main class="container">
+    
         <section id="blog">
-            <h2>Latest Blog Posts</h2>
+            <h1><img id="svg" src="../Static-html-website/Media/svg/blog-solid.svg" alt="blogs">  Latest Blog Posts </h1>
             <div id="blogpost">
                 <article class="post">
 
-                    <h3 class="blogarticle">What is Full Stack Development? What are the skills required for Full Stack Developer</h3>
+                    <h2 class="blogarticle">What is Full Stack Development? What are the skills required for Full Stack Developer</h2>
                     <img src="Media/Images/fullstack.jpg" alt="Image showing aspects of fullstack web development"
                         width="300px" height="175px">
                     <p class="intro1">Imagine a web application as a house. The front-end is the exterior you see – the walls, windows,
@@ -83,8 +85,8 @@
                 </article>
 
                 <article class="post">
-                    <h3 class="blogarticle">The Power of Effective Communication: Building Bridges, Fostering Relationships, and Achieving
-                        Success</h3>
+                    <h2 class="blogarticle">The Power of Effective Communication: Building Bridges, Fostering Relationships, and Achieving
+                        Success</h2>
                     <img src="Media/Images/communication.jpg" alt="important aspects of effective communication"
                         width="300px" height="175px">
                     <p class="intro2">
@@ -129,77 +131,95 @@
         </section>
 
 
-        <br>
-        <br>
-        <br>
-
-        <!-- About Me Section -->
-        <section class="about" id="about">
-            <h2>About Me</h2>
-            <p>
-                Hi! I'm Hrishabh, a passionate full-stack developer with a deep interest in learning new technologies
-                and creating innovative web solutions. I also love engaging with people and understanding their
-                perspectives. Coding is my way of solving problems, and through this blog, I share my thoughts and ideas
-                with the world.
-            </p>
-        </section>
-
-
 
         <!-- Embedded Video Section -->
-        <section id="htmlvideo">
-            <h2>My Favorite Coding Tutorial</h2>
-            <video src="Media/Videos/videoplayback.mp4" controls width="75%" autoplay muted>
-
+         <h2 id="videoheading"><img id="svg" src="../Static-html-website/Media/svg/video-solid.svg" alt="video">   Video</h2>
+        <section id="video"> 
+            <div> <h2>My Favorite Coding Tutorial</h2>
+            <video src="Media/Videos/videoplayback.mp4" controls width="100%" autoplay muted>
+                
             </video>
-        </section>
-        <section id="comvideo"></section>
-        <h2>Importance of Communication</h2>
-        <video src="Media/Videos/Communication - Basics and Importance.mp4" controls width="75%">
-        </video>
-        </section>
         </div>
+        
+      <div>  <h2>Importance of Communication</h2>
+        <video src="Media/Videos/Communication - Basics and Importance.mp4" controls width="100%">
+        </video>
+    </div>
+
+    <div>
+        <h2>Travel blog</h2>
+        <video src="../Static-html-website/Media/Videos/Welcome to India ! [CINEMATIC TRAVEL FILM].mp4" controls width="100%" autoplay muted></video>
+    </div>
+        </section>
+    
+
+    </div>
+
+
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>I'd love to hear from you! You can reach me via:</p>
+        <ul>
+            <li>Email: <a href="mailto:hrishabhbharati@yahoo.com">hrishabhbharati@yahoo.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/hrishabh">linkedin.com/in/hrishabh</a></li>
+        </ul>
+        <form action="submit" method="post">
+            <div>
+                <ul>
+                    <li>
+                        <label for="name">Enter your Full name</label>
+                        <input type="text" id="name" name="Full Name" placeholder="Full Name">
+                    </li>
+                    <li>
+                        <label for="emailid">Enter your Email ID</label>
+                        <input type="email" name="Email ID" id="emailid" placeholder="Email-Id">
+                    </li>
+                    <li>
+                        <label for="dob">Enter Your Birthdate</label>
+                        <input type="date" name="Date of birth" id="dob">
+                    </li>
+                    <li>
+                        <label for="mobile">Enter your mobile number</label>
+                        <input type="number" name="Mobile Number" id="mobile" placeholder="Mobile Number">
+                    </li>
+                    <li>
+                        <label for="address">Enter Your Address</label>
+                        <input type="text" name="address" id="address" placeholder="Address">
+                    </li>
+                    <li>
+                        <label for="description">Feedback</label>
+                        <textarea type="text" name="description" id="description" placeholder="Please give your valuable feedback."></textarea>
+                    </li>
+                </ul>
+    
+                <input type="submit" name="submit" id="submit" value="Submit">
+                <input type="reset" name="reset" id="reset" value="Reset">
+            </div>
+        </form>
+    </section>
+
+
+
+                <!-- About Me Section -->
+                <section class="about" id="about">
+                    <h2><img id="svg" src="../Static-html-website/Media/svg/address-card-solid.svg" alt="about me"> About Me </h2>
+                    <p>
+                        Hi! I'm Hrishabh, a passionate full-stack developer with a deep interest in learning new technologies
+                        and creating innovative web solutions. I also love engaging with people and understanding their
+                        perspectives. Coding is my way of solving problems, and through this blog, I share my thoughts and ideas
+                        with the world.
+                    </p>
+                </section>
+        
+        
+        
+        
 
         <!-- Footer -->
         <footer>
-            <!-- Contact Section -->
-            <section class="contact" id="contact">
-                <h2>Contact Me</h2>
-                <p>I'd love to hear from you! You can reach me via:</p>
-                <ul>
-                    <li>Email: <a href="mailto:hrishabhbharati@yahoo.com">hrishabhbhrati@yahoo.com</a></li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/hrishabh">linkedin.com/in/hrishabh</a></li>
-                </ul>
-                <form action="submit" method="post">
-                    <div>
-                        <ul>
-                            <li><label for="name">Enter your Full name</label>
-                                <input type="text" id="name" name="Full Name" placeholder="Full Name">
-                            </li>
-                            <li><label for="emailid">Enter your Email ID</label>
-                                <input type="email" name="Email ID" id="emailid" placeholder="Email-Id">
-                            </li>
-                            <li><label for="dob">Enter Your Birthdate</label>
-                                <input type="date" name="Date of birth" id="dob" placeholder="Date of Birth">
-                            </li>
-                            <li><label for="mobile">Enter your mobile number</label>
-                                <input type="number" name="Mobile Number" id="mobile" placeholder="Mobile Number">
-                            </li>
-                            <li><label for="address">Enter Your Address</label>
-                                <input type="text" name="address" id="address" placeholder="Address">
-                            </li>
-                        </ul>
 
-                        <label for="submit"></label>
-                        <input type="submit" name="submit" id="submit">
-                        <label for="reset"></label>
-                        <input type="reset" name="reset" id="reset">
-
-                    </div>
-
-                </form>
-            </section>
-            <p> <!--special character--> &copy; 2024 Hrishabh's Blog | All rights reserved</p>
+                        <p> <!--special character--> &copy; 2024 Hrishabh's Blog | All rights reserved</p>
         </footer>
 
 </body>
